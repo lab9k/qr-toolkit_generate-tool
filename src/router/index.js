@@ -1,24 +1,20 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import SingleView from '../views/SingleView.vue';
-import MultiView from '../views/MultiView.vue';
+import GenerationView from '../views/GenerationView.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/single',
-    name: 'Single',
+    path: '/',
+    name: 'Home',
     component: SingleView,
   },
   {
-    path: '/multi',
-    name: 'Multi',
-    component: MultiView,
-  },
-  {
-    path: '/',
-    redirect: '/single',
+    path: '/generate',
+    name: 'Generate',
+    component: GenerationView,
   },
 ];
 
